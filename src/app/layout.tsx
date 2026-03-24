@@ -16,6 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
+  verification: {
+    google: "cURlvVNu3zQKlF8JZiT_ficlsSTCxvKsOzqqa8Gxh30",
+  },
   title: "TimeSync — Free Time Zone Converter",
   description:
     "Convert time zones instantly with visual timeline, business hour overlap detection, and shareable meeting links. Free time zone converter for remote teams.",

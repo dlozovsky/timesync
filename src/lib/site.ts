@@ -1,9 +1,10 @@
 /**
  * Canonical site origin for metadata, sitemap, and robots.
- * Override in staging/preview with NEXT_PUBLIC_SITE_URL (no trailing slash).
+ * Override anytime via NEXT_PUBLIC_SITE_URL (no trailing slash), e.g. a custom domain on Vercel.
  */
 export function getSiteUrl(): string {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://timesync.app";
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://timesync-kappa.vercel.app";
   return raw.replace(/\/$/, "");
 }
 
